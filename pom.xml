@@ -11,7 +11,7 @@
         <repository>
             <id>github</id>
             <name>Maventest</name>
-            <url>https://maven.pkg.github.com/anikethreddy-c/test</url>
+            <url>https://maven.pkg.github.com/anikethreddy-c/github-example-package</url>
         </repository>
     </distributionManagement>
     <developers>
@@ -19,15 +19,15 @@
             <name>Aniketh</name>
             <email>c.anikethreddy@gmail.com</email>
             <organization>com.github.c-anikethreddy</organization>
-            <organizationUrl>https://github.com/anikethreddy-c/test</organizationUrl>
+            <organizationUrl>https://github.com/anikethreddy-c/github-example-package</organizationUrl>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:git remote add origin https://github.com/anikethreddy-c/test.git</connection>
-        <developerConnection>scm:git:https://github.com/anikethreddy-c/maventest.git
+        <connection>scm:git:git remote add origin https://github.com/anikethreddy-c/github-example-package.git</connection>
+        <developerConnection>scm:git:https://github.com/anikethreddy-c/github-example-package.git
         </developerConnection>
-        <url>https://github.com/anikethreddy-c/maventest</url>
+        <url>https://github.com/anikethreddy-c/github-example-package</url>
         <tag>maventest</tag>
     </scm>
 
