@@ -4,7 +4,7 @@
 
     <groupId>io.github.anikethreddy-c</groupId>
     <artifactId>github-example-package</artifactId>
-    <version>1.0</version>
+    <version>1.0.0.0</version>
     <packaging>jar</packaging>
 
     <distributionManagement>
@@ -118,7 +118,24 @@
                     </execution>
                 </executions>
             </plugin>
-
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                        <configuration>
+                            <keyname>${key}</keyname>
+                            <passphraseServerId>${key}</passphraseServerId>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
         </plugins>
     </build>
